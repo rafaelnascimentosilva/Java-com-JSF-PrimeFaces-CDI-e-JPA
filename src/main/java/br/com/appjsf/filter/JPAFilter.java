@@ -48,7 +48,7 @@ public class JPAFilter implements Filter {
 	}
 
 	public void init(FilterConfig fConfig) throws ServletException {
-		this.entityManagerFactory=Persistence.createEntityManagerFactory(this.persistence_unit_name);
+		this.entityManagerFactory = Persistence.createEntityManagerFactory(this.persistence_unit_name);
 	}
 
 }

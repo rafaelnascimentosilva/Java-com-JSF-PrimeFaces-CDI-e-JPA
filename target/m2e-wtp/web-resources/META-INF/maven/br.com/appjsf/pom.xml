@@ -7,6 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<dependencies>
+	
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -41,7 +42,13 @@
 			<version>1.2</version>
 			<scope>provided</scope>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.16</version>
+		</dependency>
+		
 		<!--JBoss/Weld implementação de referência do CDI para Servlet Container(Exemplo:Tomcat) -->
 		<dependency>
 			<groupId>org.jboss.weld.servlet</groupId>
@@ -60,17 +67,12 @@
 		<!-- PROVIDER JPA(HIBERNATE) -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-			<version>4.3.0.Final</version>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.4.2.Final</version>
 		</dependency>
 
 		<!-- DEPENDENCIA MYSQL -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.37</version>
-		</dependency>
-
+	
 		<!-- usado pelo Weld -->
 		<dependency>
 			<groupId>org.jboss</groupId>
